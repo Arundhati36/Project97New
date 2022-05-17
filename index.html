@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>My To-do List</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    </head>
+    <body>
+        <div class="box">
+            <header>To-do List</header>
+            <div class="inputPlace">
+                <input id="input_task" type="text" placeholder="Add your task">
+                <button id="add_button" onclick="button_add()"><i class="fas fa-plus"></i></button>
+            </div>
+            <ul id="todoList"></ul>
+            <div class="footer">
+                <span>You have <span id="pending_tasks"></span> pending tasks</span>
+                <button id="delete_button" onclick="deleteAll()">Clear All</button>
+            </div>
+        </div>
+        <script src="main.js"></script>
+    </body>
+</html>
